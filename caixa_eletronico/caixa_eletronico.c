@@ -1,4 +1,4 @@
-#inclue <stdio.h>
+#include <stdio.h>
 
 int main() {
     int opcao;
@@ -21,10 +21,7 @@ int main() {
         if (opcao == 0) {
             printf("Saindo\n");
         }
-   } while (opcao != 0);
-
-    return 0;
-}
+   
 
 if (opcao == 1) {
             printf("Seu saldo e: R$ %.2f\n", saldo);
@@ -90,6 +87,10 @@ if (opcao == 1) {
         if (opcao == 6) {
             printf("Situacao do emprestimo: R$ %.2f\n", emprestimo);
         }
+} while (opcao != 0);
+
+    return 0;
+}
 
 
 
