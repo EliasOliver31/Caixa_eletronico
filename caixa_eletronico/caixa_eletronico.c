@@ -25,7 +25,7 @@ int main() {
 
 if (opcao == 1) {
             printf("Seu saldo e: R$ %.2f\n", saldo);
-        }=== 
+        }
         if (opcao == 2) {
             printf("Quanto quer depositar? R$ ");
             scanf("%f", &valor);
