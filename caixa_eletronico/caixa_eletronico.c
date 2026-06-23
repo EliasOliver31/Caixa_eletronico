@@ -14,9 +14,11 @@ int main() {
         printf("4 - Pedir emprestimo\n");
         printf("5 - Pagar emprestimo\n");
         printf("6 - Consultar emprestimo\n");
-        printf("0 - Sair\n");
+        printf("0 - Sair\n"); 
         printf("Escolha: ");
         scanf("%d", &opcao);
+        } while (opcao != 0);
+    
 
         if (opcao == 0) {
             printf("Saindo\n");
@@ -87,7 +89,6 @@ if (opcao == 1) {
         if (opcao == 6) {
             printf("Situacao do emprestimo: R$ %.2f\n", emprestimo);
         }
-} while (opcao != 0);
 
     return 0;
 }
