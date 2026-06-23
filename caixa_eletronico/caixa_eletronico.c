@@ -39,3 +39,17 @@ if (opcao == 1) {
                 printf("Deposito realizado! Novo saldo: R$ %.2f\n", saldo);
             }
         }
+
+        if (opcao == 3) {
+            printf("Quanto quer sacar? R$ ");
+            scanf("%f", &valor);
+            if (valor <= 0) {
+                printf("Valor invalido!\n");
+            } else if (valor > saldo) {
+                printf("Saldo insuficiente! Seu saldo e: R$ %.2f\n", saldo);
+            } else {
+                saldo = saldo - valor;
+                printf("Saque realizado! Saldo restante: R$ %.2f\n", saldo);
+            }
+        }
+
