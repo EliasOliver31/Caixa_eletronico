@@ -26,4 +26,16 @@ int main() {
     return 0;
 }
 
-
+if (opcao == 1) {
+            printf("Seu saldo e: R$ %.2f\n", saldo);
+        }
+        if (opcao == 2) {
+            printf("Quanto quer depositar? R$ ");
+            scanf("%f", &valor);
+            if (valor <= 0) {
+                printf("Valor invalido!\n");
+            } else {
+                saldo = saldo + valor;
+                printf("Deposito realizado! Novo saldo: R$ %.2f\n", saldo);
+            }
+        }
